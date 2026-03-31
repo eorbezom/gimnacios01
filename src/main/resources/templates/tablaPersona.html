@@ -25,6 +25,7 @@
 			<td>Fecha/Nacimiento</td>
 			<td>Fecha/Ingreso</td>
 			<td>Estado civil</td>
+			<td>Detalles</td>
 
 
 		</tr>
@@ -51,6 +52,10 @@
 			<td>
 				<span th:if="${personal.estado == true }" class="badge bg-danger">Casado</span>
 				<span th:unless="${personal.estado == true }" class="badge bg-success">Soltero</span>
+			</td>
+			
+			<td>
+				<a th:href="@{/persona/view/{id}(id=${personal.id})}" class="btn btn-success">Detalle</a>
 			</td>
 			
 

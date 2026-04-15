@@ -7,10 +7,22 @@
 </head>
 <body>
 
-<h1>Hola Bienvenidos a Detalle personal 😎</h1>
+<h1>Hola lista de categorias😎</h1>
 
-<h1 th:text="'El Id que etas buscando es: '+${idPersona}"></h1>
-<a th:href="@{/persona}" class="btn btn-danger">Atras</a>
+<table>
+  <tr>
+    <th>Nombres</th>
+    <th>Descripcion</th>
+  </tr>
+  <tr >
+    <td></td>
+   
+  </tr>
+ 
+</table>
+
+
+<a th:href="@{/categorias/create}" class="btn btn-warning">Atras</a>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>

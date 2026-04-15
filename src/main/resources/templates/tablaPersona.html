@@ -25,7 +25,7 @@
 			<td>Fecha/Nacimiento</td>
 			<td>Fecha/Ingreso</td>
 			<td>Estado civil</td>
-			<td>Detalles</td>
+			<td>Opciones</td>
 
 
 		</tr>
@@ -56,6 +56,7 @@
 			
 			<td>
 				<a th:href="@{/persona/view/{id}(id=${personal.id})}" class="btn btn-success">Detalle</a>
+				<a th:href="@{/persona/delete(id=${personal.id})}" class="btn btn-danger">Eliminar</a>
 			</td>
 			
 

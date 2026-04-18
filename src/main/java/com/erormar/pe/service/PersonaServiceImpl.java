@@ -72,5 +72,15 @@ public class PersonaServiceImpl implements IPersonaService{
 	public List<Personal> buscarTodas() {
 		return lista;
 	}
+
+	@Override
+	public Personal buscarId(Integer idPersonal) {
+		for (Personal p: lista) {
+			if(p.getId()==idPersonal) {
+				return p;
+			}
+		}
+		return null;
+	}
 	
 }

@@ -6,5 +6,6 @@ import com.erormar.pe.model.Personal;
 
 public interface IPersonaService {
 	List<Personal>buscarTodas();
+	Personal buscarId(Integer idPersonal);
 
 }

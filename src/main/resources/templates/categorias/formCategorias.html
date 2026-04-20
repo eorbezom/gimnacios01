@@ -11,7 +11,7 @@
 	crossorigin="anonymous">
 </head>
 <body>
-
+<div th:replace="home.html :: navbar"></div>
 	<h1>formulario de categorias😎</h1>
 
 	<form th:action="@{/categorias/save}" method="post">

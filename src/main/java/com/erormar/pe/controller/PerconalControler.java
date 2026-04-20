@@ -24,10 +24,4 @@ public class PerconalControler {
 		return"tablaPersona";
 	}
 	
-	
-	
-	
-	
-	
-
 }

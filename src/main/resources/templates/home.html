@@ -4,10 +4,36 @@
 <meta charset="UTF-8">
 <title>Pagina</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+<style>
+    .navbar-nav .nav-link {
+        color: white !important;
+        transition: all 0.3s ease;
+        border: 2px solid transparent;
+        border-radius: 6px;
+        padding: 8px 16px;
+        margin: 0 5px;
+    }
+
+    /* Hover - Solo cuando pasa el mouse */
+    .navbar-nav .nav-link:hover {
+        color: white !important;           /* Azul */
+        border: 2px solid #0d6efd;
+        background-color: rgba(13, 110, 253, 0.1);
+    }
+
+    /* Active - Solo cuando realmente está en esa página */
+    .navbar-nav .nav-link.active {
+        color: #0d6efd !important;
+        border: 2px solid #0d6efd;
+        background-color: rgba(13, 110, 253, 0.15);
+    }
+</style>
+
 </head>
 <body>
 
-<nav th:fragment="navbar" class="navbar navbar-expand-lg bg-body-tertiary">
+<nav th:fragment="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" th:href="@{/}">Erormar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
@@ -15,9 +41,9 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" th:href="@{/}">Inicio</a>
+          <a class="nav-link" aria-current="page" th:href="@{/}">Inicio</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" th:href="@{/persona}">Personas</a>
